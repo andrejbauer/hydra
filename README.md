@@ -23,11 +23,11 @@ You may run the program in several ways:
 
 2. Change to the repository directory, compile the program
 
-       javac -d bin -sourcepath src src/hydra/HydraWindow.java       
+        javac -d bin -sourcepath src src/hydra/HydraWindow.java
 
    and run it with
 
-       CLASSPATH=bin java hydra.HydraWindow
+        CLASSPATH=bin java hydra.HydraWindow
   
 
 #### References
