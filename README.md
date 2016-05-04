@@ -8,21 +8,27 @@ A theorem by Paris and Kirby [1] states that *you always win*, no matter how you
 heads, but it takes a rather long time to chop down a hydra. Paris and Kirby also showed
 that Peano arithmetic does not prove that hydra always loses.
 
-The Hydra game is implemented in Java and is packaged as an Eclipse project. I have
-released the source code into the public domain. Please send me any enhancements you
-implement on top of my code.
+The Hydra game is implemented in Java. I have released the source code into the public
+domain. Please send me any enhancements you implement on top of my code.
 
-You may run the main program `HydraWindow` from Eclipse or directly from command
-line with (you need to change to the `src` directory first)
+You may run the program in several ways:
 
-    CLASSPATH=bin java hydra.HydraWindow
+1. Run the game as an [applet in your browser](http://math.andrej.com/wp-content/uploads/2008/02/Hydra/hydraApplet.html) (you may have to convince the brower that this is not a secuirty risk).
 
-Alternatively, you can download the JAR file and run it with
+2. [Download the JAR file `hydra.jar`](http://math.andrej.com/wp-content/uploads/2008/02/hydra.jar) and run it on your computer by double-clicking on it or from the command line
 
-    java -jar hydra.jar
+       java -jar hydra.jar
+
+3. Run `HydraWindow` from your IDE if you know what that means
+
+2. Change to the repository directory, compile the program
+
+       javac -d bin -sourcepath src src/hydra/HydraWindow.java       
+
+   and run it with
+
+       CLASSPATH=bin java hydra.HydraWindow
   
-The game can be embedded into a web page as a Java applet, for which you should
-use `hydra.JavaApplet`, see the file [`hydraApplet.html`](hydraApplet.html).
 
 #### References
 
